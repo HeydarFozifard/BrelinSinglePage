@@ -1,0 +1,60 @@
+// * btn Load More
+.load-more {
+    text-align: right;
+    width: 100%;
+
+    a {
+        color: $balck-color;
+        border: solid 2px #dfdfdf;
+        display: inline-block;
+        padding: 9px 25px;
+        margin: 100px 50px;
+        font-family: $font-stack;
+        font-size: 15px;
+
+
+        &:hover {
+            color: $base-color;
+            background-color: $balck-color;
+            border: $balck-color;
+            transition: all .5s ease-in;
+
+        }
+
+        i {
+            margin-left: 20px;
+        }
+
+    }
+}
+
+//?  btn submit
+.form__group {
+    width: 100%;
+    text-align: right;
+
+}
+
+
+.form__submit {
+    color: $balck-color;
+    border: solid 2px #dfdfdf;
+    display: inline-block;
+    padding: 10px 35px;
+    margin: 100px 0px;
+    font-family: $font-stack;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:hover {
+        color: $base-color;
+        background-color: $balck-color;
+        border: $balck-color;
+        transition: all .5s ease-in;
+
+    }
+
+    i {
+        margin-left: 20px;
+    }
+}

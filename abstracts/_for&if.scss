@@ -1,0 +1,18 @@
+$color:(
+    1:#5670A6,
+    2:#55ACEE,
+    3:#CD486B,
+    4:#648feb,
+    5:#EF7689
+
+);
+@for $var from 1 to 6 {
+    .contact__sociles_#{$var}{
+        &:hover{
+            color:map-get($map: $color, $key:$var );
+            transform: scale(1.4);
+            transition: all .3s ease-in;
+           
+        }
+    }
+}

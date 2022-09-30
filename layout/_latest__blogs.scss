@@ -1,0 +1,50 @@
+.latest__blogs {
+    width: 100%;
+    @include pentagonstyle(100% 0, 100% 86%, 72% 100%, 0 88%, 0 0);
+    background-color: $pentagon-color;
+    margin-top: -200px;
+    padding: 250px 0 80px 0;
+    position: relative;
+    z-index: -4;
+
+    @include responsive ("land-phone") {
+
+        margin-top: -230px;
+
+
+    }
+}
+
+.latest__blogs_container_item {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.latset__blogs_item {
+    @include responsive ("land-phone") {
+
+
+        flex-basis:50%;
+
+    }
+    @include responsive ("phone") {
+
+        flex-basis: 100%;
+
+    }
+    flex-basis: 33%;
+    margin: 25px;
+    margin-right: 0px;
+}
+
+.latset__blogs_img {
+    width: 100%;
+   
+
+    img {
+       
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

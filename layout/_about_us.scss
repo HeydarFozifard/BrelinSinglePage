@@ -1,0 +1,89 @@
+.about {
+    @include pentagonstyle(100% 0, 100% 80%, 69% 99%, 0 81%, 0 0);
+    background-color: $pentagon-color;
+    padding: 300px 70px;
+    margin-top: -170px;
+    position: relative; 
+    z-index: -1;
+    @include responsive ("land-phone"){
+        @include pentagonstyle(100% 0, 100% 80%, 84% 90%, 0 83%, 0 0);
+ 
+    }
+    
+}
+// style-for-img
+.about__image {
+    flex-basis: 40%;
+    padding: 50px;
+    @include responsive ("tablet"){
+        flex-basis: 50%;
+    }
+    @include responsive ("land-phone") {
+        flex-basis: 100%;
+    }
+    @include responsive ("phone"){
+        flex-basis: 100%;
+
+    }
+ 
+    &-img {
+       
+        width: 100%;   
+        box-shadow: -34px 39px 0px 5px $box-shadow-color;
+    }
+}
+
+// style-for-content
+
+
+.about__content {
+    @include responsive ("tablet"){
+        flex-basis: 50%;
+        padding-top: 0px;
+       
+    }
+    @include responsive ("land-phone") {
+        flex-basis: 100%;
+    }
+    @include responsive ("phone"){
+        flex-basis: 100%;
+
+    }
+    flex-basis: 60%;
+    padding-top: 70px;
+
+    &_title{
+        margin: 30px 0;
+    }
+    &_des{
+        margin-bottom:30px;
+    }
+}
+// style-for-slider
+
+
+.slider{
+    margin:50px 0 ;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.slider__item{
+    @include responsive ("tablet"){
+        flex-basis: 100%;
+    }
+    @include responsive ("land-phone"){
+        flex-basis: 100%;
+
+    }
+    display: flex;
+    flex-basis: 33.33%;
+    padding:  10px;
+}
+.slider__item_icon{
+    padding: 5px 10px;
+}
+.slider__item-title{
+    margin-bottom: 10px;
+}

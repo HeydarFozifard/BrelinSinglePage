@@ -1,0 +1,74 @@
+.conatiner {
+    width: 100%;
+    display: flex;
+    padding: 130px 70px;
+    flex-wrap: wrap;
+}
+
+.contact__info {
+    flex-basis: 40%;
+  
+    @include responsive ("land-phone"){
+        flex-basis: 100%;
+        order: 2;
+
+    }
+}
+
+.contact__form {
+    flex-basis: 60%;
+    
+    @include responsive ("land-phone"){
+        flex-basis: 100%;
+        order: 1;
+
+    }
+}
+
+//* style for info
+.contact__info_icons {
+    display: flex;
+
+    a {
+        padding: 0 10px;
+        color: $balck-color;
+
+    }
+}
+
+// stylr for form
+
+.form__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .form-group {
+        flex-basis: 50%;
+        padding: 0 8px;
+        @include responsive ("land-phone"){
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+        @include responsive ("phone"){
+            flex-basis: 100%;
+    
+        }
+    }
+}
+input[type="text"],input[type="email"],textarea{
+     width: 100%;
+     padding: 15px;
+     border: none;
+     border-bottom: 1px solid $text-color;
+     
+     &:focus{
+         border-color: violet;
+         transition: all .3s ease-in;
+     }
+     
+}
+textarea{
+   
+    margin-top: 50px;
+}

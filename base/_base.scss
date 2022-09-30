@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $base-color;
+  position: relative;
+  z-index: -10;
+}
+input,button,textarea{
+  outline: none ;
+  background-color: transparent;
+  border: none;
+}
+::placeholder{
+  font-family: $font-stack;
+  @include responsive ("land-phone"){
+   font-size: 15px;
+}
+}
+.contnaier{
+  width: 85%;
+  margin: 0 auto;
+}
+.container--flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: inherit;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}

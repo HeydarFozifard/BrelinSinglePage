@@ -1,0 +1,20 @@
+@keyframes action {
+    0%{
+        transform: translateY(50px);
+    }
+    10%{
+        transform: translateY(-15px);
+    }
+    25%{
+        transform: translateY(50px);
+    }
+    35%{
+        transform: translateY(20px);
+    }
+    70%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}

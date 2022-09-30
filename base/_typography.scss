@@ -1,0 +1,167 @@
+.header__title {
+    @include typographstyle($font-stack, 75px, bolder, 1.1, $base-color);
+    // for responsive
+    @include responsive("phone"){
+    @include typographstyle($font-stack, 55px, bolder, 1.1, $base-color);
+
+    }
+}
+
+// *for-about-us
+.about__content_title {
+    @include typographstyle($font-stack, 23px, bold, 30px, $title-about-us-color);
+
+}
+
+.about__content_des {
+    @include typographstyle($font-stack, 15px, 400, 28px, $text-color);
+
+}
+
+.slider__item_content {
+    h4 {
+        @include typographstyle($font-stack, 20px, 900, 1.5, $title-about-us-color);
+
+    }
+
+    p {
+        @include typographstyle($font-stack, 15px, 400, 1.5, $text-color);
+
+    }
+}
+
+// *for portfolio
+.portfolio_title {
+    @include typographstyle($font-stack, 30px, 900, 2, $title-about-us-color);
+
+}
+
+.portfolio__category_item {
+    a {
+        @include typographstyle($font-stack, 15px, 500, 2, $text-color);
+        text-transform: capitalize;
+
+    }
+}
+
+.portfolio__gallery_overlay_title {
+    span {
+        @include typographstyle($font-stack, 13px, 400, 2.42, $balck-color);
+
+    }
+
+    h2 {
+        @include typographstyle($font-stack, 22px, 900, 1.1, $balck-color);
+
+    }
+}
+
+// todo for.latest__blogs
+.latest__blogs {
+    h1 {
+        @include typographstyle($font-stack, 23px, bolde, 1.1, $balck-color);
+        text-align: right;
+        margin-bottom: 20px;
+    }
+}
+
+.letset__blogs_des {
+    h2 {
+        @include typographstyle($font-stack, 18px, 700, 27px, $balck-color);
+        margin-bottom: 10px;
+    }
+
+    p {
+        @include typographstyle($font-stack, 15px, 0, 27px, $text-color);
+        margin-bottom: 10px;
+    }
+
+    a {
+        @include typographstyle($font-stack, 13px, 300, 27px, $balck-color);
+
+        span {
+            @include typographstyle($font-stack, 13px, 300, 27px, $text-color);
+
+        }
+
+    }
+}
+
+// todo for contact
+.contact__info_title {
+
+    @include typographstyle($font-stack, 23px, 900, 1.1, $balck-color);
+    margin-bottom: 30px;
+}
+
+// for datalist
+.contact_info_datalist {
+
+    @include typographstyle($font-stack, 15px, 400, 36px, $balck-color);
+
+
+    .contact__info_state {
+        margin-bottom: 30px;
+    }
+
+
+
+    .contact__info_tell {
+        margin-bottom: 40px;
+    }
+}
+
+// for contact form
+.contact__form_title {
+    @include typographstyle($font-stack, 23px, 900, 1.1, $balck-color);
+    text-align: right;
+    padding-top: 60px;
+
+}
+
+// for footer
+footer {
+    .footer__socials_link {
+        @include typographstyle($font-stack, 14px, 300, 1.1, $text-color);
+        
+    }
+
+    .footer__copyright {
+        margin-top: 20px;
+        @include typographstyle($font-stack, 14px, 300, 2.1, $text-color);
+        text-align: center
+        
+
+    
+    }
+
+    .footer__company {
+        @include typographstyle($font-stack, 14px, 300, 2.1, $text-color);
+        text-align: center
+    }
+
+}
+
+
+// !for icon
+.header__icons_social a {
+    @include typographstyleicon(15px, $base-color);
+    @include responsive ("big_desktop"){
+        @include typographstyleicon(25px, $base-color);
+
+    }
+}
+
+.header__action_icon {
+    i {
+        @include typographstyleicon(40px, $base-color);
+
+    }
+}
+
+.slider__item_icon {
+    i {
+        @include typographstyleicon(32px, $title-about-us-color);
+
+    }
+}
